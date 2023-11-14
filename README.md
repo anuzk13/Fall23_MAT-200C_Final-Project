@@ -6,7 +6,7 @@ Do you recommend me to try to understand the paper and the math? I have seen som
 
 ### Previous work on **NeRF** [Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf)
 
-*My notes on the [[NERF Paper]]*
+*My notes on the [NERF Paper](NERF%20Paper.md)*
 **Conclusion**
 	- Nerfs build on volume rendering techniques and combine them with the idea of representing 3d scene as a continuous function (to reduce size) and do some estimations of the volume rendering techniques to make it a differentiable function, and use some other optimizations such as training a coarse and detailed network to optimize ray sampling and also re-encoding the parameters of the network (camera position and orientation) because they found out that when the rendering function maps to high frequency domains of color and shape the network does not perform well...so they do some re-mapping that I don't 100% understand to make it a lower frequency function
 	- To render them on web I need to [bake them](https://phog.github.io/snerg/)
