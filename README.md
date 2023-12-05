@@ -1,22 +1,32 @@
+
+### Project Summary
+
 For my project I  am interested in reading a paper on NeRF and implementing this methods on webgpu. I am interested in being able to read, understand and implement a ML paper. I will use the same license as the original NERF project (MIT License).
 
 My question would be:
 
 Do you recommend me to try to understand the paper and the math? I have seen some "cool things" in the internet and I am not sure if instead I should just try to play around with it and achieve a good looking result.
 
-### Previous work on **NeRF** [Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf)
+### Project progress
+1. For my project I have studied two papers: 
 
-*My notes on the [NERF Paper](NERF%20Paper.md)*
-**Conclusion**
-	- Nerfs build on volume rendering techniques and combine them with the idea of representing 3d scene as a continuous function (to reduce size) and do some estimations of the volume rendering techniques to make it a differentiable function, and use some other optimizations such as training a coarse and detailed network to optimize ray sampling and also re-encoding the parameters of the network (camera position and orientation) because they found out that when the rendering function maps to high frequency domains of color and shape the network does not perform well...so they do some re-mapping that I don't 100% understand to make it a lower frequency function
-	- To render them on web I need to [bake them](https://phog.github.io/snerg/)
-	- It is yet unclear to me what is the relation between Nerfs and Gaussian Splatting but the second seems to be the one available and explored in web versions https://github.com/antimatter15/splat 
-	- https://poly.cam/tools/gaussian-splatting 
-	- https://twitter.com/antimatter15?lang=en
-## Possible explorations
+[Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf)
 
-### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
-[gaussian splatting](https://github.com/graphdeco-inria/gaussian-splatting) 
+**[My notes on the NERF Paper](NERF%20Paper.md)**
+
+[3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://github.com/graphdeco-inria/gaussian-splattin)
+
+**[My notes on the GS paper](GS%20paper.md)**
+
+2. I am also working on playing with a renderer for gaussian splats
+
+See my progres modifying the Gaussian Splat Renderer here:
+https://github.com/anuzk13/SplatMAT200C/tree/my_exp
+
+[My notes on creating and modifying GP](Playing.md)
+### Brainstorming
+
+Creating and visualizing Gaussian Splats
 ![595](ezgif-3-85421be3e1.gif)
 
 
@@ -38,8 +48,17 @@ Modifying [GP with shaders](https://x.com/Ruben_Fro/status/1712651517310996701?s
 ### Web implementations
 [Web implementations](https://whenistheweekend.com/k/GaussianSplats3D/demo/fanPhone.html?s=09)
 [GP for threejs](https://github.com/mkkellogg/GaussianSplats3D?s=09)
+https://discourse.threejs.org/t/3d-gaussian-splatting-in-three-js/57858
+https://github.com/SpectacularAI/splat 
+https://github.com/antimatter15/splat 
 
-
+### Random online things
 https://x.com/AlexR4/status/1720378611289526471?t=eaLqUYpj3C02ZcTXi852Xw&s=09
-
 https://x.com/amygoodchild/status/1724083526671163645?t=8kaS-UfnGKgxmOJ3fQk1hw&s=09
+https://mastodon.gamedev.place/@aras
+[Unity GP](https://github.com/aras-p/UnityGaussianSplatting/releases/tag/v0.8.0)
+[Chat for learning about NERF](https://twitter.com/fdellaert/status/1723257141887426616)
+[Making GP smaller](https://aras-p.info/blog/2023/09/13/Making-Gaussian-Splats-smaller/)
+https://x.com/NTU_chenyiwen/status/1728963861813064187?t=UhJs13Hjm2KRMMfMrAKmFA&s=09
+3D object tracking https://github.com/DLR-RM/3DObjectTracking 
+https://x.com/Nik__V__/status/1731840557553496410?t=I-hFBYuzM4OcE3JC2Za_qw&s=09

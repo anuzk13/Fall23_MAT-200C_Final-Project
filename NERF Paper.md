@@ -1,10 +1,18 @@
 - https://colab.research.google.com/github/bmild/nerf/blob/master/tiny_nerf.ipynb
 - [video ](https://www.youtube.com/watch?v=dPWLybp4LL0)
 
+**Conclusion**
+	- Nerfs build on volume rendering techniques and combine them with the idea of representing 3d scene as a continuous function (to reduce size) and do some estimations of the volume rendering techniques to make it a differentiable function, and use some other optimizations such as training a coarse and detailed network to optimize ray sampling and also re-encoding the parameters of the network (camera position and orientation) because they found out that when the rendering function maps to high frequency domains of color and shape the network does not perform well...so they do some re-mapping that I don't 100% understand to make it a lower frequency function
+	- To render them on web I need to [bake them](https://phog.github.io/snerg/)
+	- It is yet unclear to me what is the relation between Nerfs and Gaussian Splatting but the second seems to be the one available and explored in web versions https://github.com/antimatter15/splat 
+	- https://poly.cam/tools/gaussian-splatting 
+	- https://twitter.com/antimatter15?lang=en
+
+**Reading notes**
 - Intro
 	- “Our method optimizes a deep fully-connected neural network without any convolutional layers (often referred to as a multilayer perceptron or MLP)” ([Mildenhall et al., 2020, p. 1](zotero://select/library/items/8FBKWBMU)) ([pdf](zotero://open-pdf/library/items/JMSMQL9S?page=1&annotation=SA4L2B4Q))
 	- “We represent a static scene as a continuous 5D function that 
-		- outputs the radiance emitted in each direction (θ, φ) at each point (x, y, z) in space, 
+		- outputs the **radiance field (radiance emitted in each direction (θ, φ) at each point (x, y, z) in space)** ^469223
 		- and a density at each point which acts like a differential opacity controlling how much radiance is accumulated by a ray passing through (x, y, z)” ([Mildenhall et al., 2020, p. 1](zotero://select/library/items/8FBKWBMU)) ([pdf](zotero://open-pdf/library/items/JMSMQL9S?page=1&annotation=N4CY546K))
 	- “To render this neural radiance field (NeRF)”: 
 		- “1) march camera rays through the scene to generate a sampled set of 3D points, 
