@@ -39,7 +39,7 @@ Running the code on this [repo](https://github.com/graphdeco-inria/gaussian-spla
 		--densify_until_iter, starts at 15_000
 		This has worked to varying degrees of success (YMMV).
 	- I think I can't run cuda yet
-		- ![Pasted image 20231116112026](Pasted%20image%2020231116112026.png)
+		- ![[Pasted image 20231116112026.png]]
 		- NVIDIA GeForce RTX 3080 Laptop GPU with CUDA capability sm_86 is not compatible with the current PyTorch installation.
 		- The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 compute_37.
 		- If you want to use the NVIDIA GeForce RTX 3080 Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/

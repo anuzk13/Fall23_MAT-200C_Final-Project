@@ -1,4 +1,4 @@
-
+https://arxiv.org/pdf/2312.03203.pdf
 ### Project Summary
 
 For my project I  am interested in reading a paper on NeRF and implementing this methods on webgpu. I am interested in being able to read, understand and implement a ML paper. I will use the same license as the original NERF project (MIT License).
@@ -8,6 +8,7 @@ My question would be:
 Do you recommend me to try to understand the paper and the math? I have seen some "cool things" in the internet and I am not sure if instead I should just try to play around with it and achieve a good looking result.
 
 ### Project progress
+
 1. For my project I have studied two papers: 
 
 [Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf)
@@ -62,3 +63,10 @@ https://mastodon.gamedev.place/@aras
 https://x.com/NTU_chenyiwen/status/1728963861813064187?t=UhJs13Hjm2KRMMfMrAKmFA&s=09
 3D object tracking https://github.com/DLR-RM/3DObjectTracking 
 https://x.com/Nik__V__/status/1731840557553496410?t=I-hFBYuzM4OcE3JC2Za_qw&s=09
+https://lumalabs.ai/luma-web-library
+
+https://x.com/Haxiomic/status/1733971738558435622?t=W4Ln0ZB_OU02Vbuf68GSbQ&s=09
+
+https://x.com/Haxiomic/status/1733971738558435622?t=W4Ln0ZB_OU02Vbuf68GSbQ&s=09
+
+https://x.com/zianwang97/status/1725300891421462926?t=ujDl8QuIvZbp7ftjb7jSIA&s=09

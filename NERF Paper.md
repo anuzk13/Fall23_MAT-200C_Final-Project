@@ -49,6 +49,7 @@
 			- [ Learning to Predict 3D Objects with an Interpolation-based Differentiable Renderer](https://research.nvidia.com/labs/toronto-ai/DIB-R/)
 			- [Differentiable Monte Carlo Ray Tracing through Edge Sampling](https://people.csail.mit.edu/tzumao/diffrt/)
 		- volumetric representations -> discrete volumetric representations like voxel grids or planes
+			- https://stephenlombardi.github.io/projects/neuralvolumes/
 			- ![Pasted image 20231113213804](Pasted%20image%2020231113213804.png)
 			- “used large datasets of multiple scenes to train deep networks that predict a sampled volumetric representation from a set of input images, and then use either alpha-compositing or learned compositing along rays to render novel views at test time.” ([Mildenhall et al., 2020, p. 4](zotero://select/library/items/8FBKWBMU)) ([pdf](zotero://open-pdf/library/items/JMSMQL9S?page=4&annotation=DDFDBT7D)). “their ability to scale to higher resolution imagery is fundamentally limited by poor time and space complexity due to their discrete sampling” ([Mildenhall et al., 2020, p. 4](zotero://select/library/items/8FBKWBMU)) ([pdf](zotero://open-pdf/library/items/JMSMQL9S?page=4&annotation=E3KVBLA7))
 			- [DeepView View Synthesis with Learned Gradient Descent](https://augmentedperception.github.io/deepview/)
